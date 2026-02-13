@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Akshar Plus — Live Chat, Audio & Video Calling Platform</title>
+<link rel="icon" type="image/svg+xml" href="placeholder.png" />
+<link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Bricolage+Grotesque:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- ══════════════════ NAVBAR ══════════════════ -->
+<nav id="navbar">
+  <a class="nav-logo" href="#">
+    <div class="logo-icon">
+      <img src="light-full-logo.png">
+    </div>
+  </a>
+
+  <div class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#calling">Calling</a>
+    <a href="#multicompany">Multi-Company</a>
+    <a href="#files">Media Library</a>
+    <a href="#testimonials">Reviews</a>
+  </div>
+
+  <div class="nav-actions">
+    <a href="https://aksharplus.com/" class="btn-ghost">Sign In</a>
+    <!--<a href="#" class="btn-cta">-->
+    <!--  <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.75 4.75a.75.75 0 00-1.5 0v4.5h-4.5a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5h-4.5v-4.5z"/></svg>-->
+    <!--  Get Started Free-->
+    <!--</a>-->
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#features">Features</a>
+  <a href="#calling">Calling</a>
+  <a href="#multicompany">Multi-Company</a>
+  <a href="#files">Media Library</a>
+  <a href="#testimonials">Reviews</a>
+</div>
+
+<!-- ══════════════════ HERO BANNER (SLIDER) ══════════════════ -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="mesh-blob mb1"></div>
+    <div class="mesh-blob mb2"></div>
+    <div class="mesh-blob mb3"></div>
+  </div>
+
+  <div class="hero-track" id="heroTrack">
+
+    <!-- Slide 1 — Chat -->
+    <div class="hero-slide">
+      <div class="hero-content">
+        <div class="hero-badge badge-purple"><span class="dot"></span> Live Chat Platform</div>
+        <h1 class="hero-h1">Connect Your Team<br>with <span class="grad-text">Real-Time Chat</span></h1>
+        <p class="hero-p">Akshar Plus brings your entire organisation into one beautifully designed messaging space — with threaded conversations, pinned messages, and scheduled broadcasts.</p>
+        <div class="hero-btns">
+          <a href="#" class="btn-cta">Start for Free →</a>
+          <a href="#features" class="btn-ghost">Explore Features</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="chat-mockup">
+          <div class="chat-top">
+            <div class="chat-av">DT</div>
+            <div class="chat-top-info">
+              <p>Design Team</p>
+              <span>● 12 members online</span>
+            </div>
+            <div class="chat-top-actions">
+              <button title="Audio call">🎙️</button>
+              <button title="Video call">🎥</button>
+              <button title="More">⋯</button>
+            </div>
+          </div>
+          <div class="chat-body">
+            <div class="chat-msg">
+              <div class="msg-av" style="background:linear-gradient(135deg,#e91e8c,#7c3aed)">SR</div>
+              <div>
+                <div class="msg-bubble them">
+                  <span class="pin-badge">📌 Pinned</span>
+                  <p>Sprint kickoff notes are now pinned above ☝️</p>
+                  <span class="msg-time">9:10 AM</span>
+                </div>
+              </div>
+            </div>
+            <div class="chat-msg">
+              <div class="msg-av" style="background:linear-gradient(135deg,#2563eb,#06b6d4)">AM</div>
+              <div>
+                <div class="msg-bubble them">
+                  <p>Video review scheduled for tomorrow 3 PM 🗓️</p>
+                  <span class="msg-time">9:14 AM</span>
+                </div>
+              </div>
+            </div>
+            <div class="chat-msg me">
+              <div class="msg-av" style="background:linear-gradient(135deg,#f97316,#fbbf24)">You</div>
+              <div>
+                <div class="msg-bubble me">
+                  <p>Sounds great! I'll share the mockup files 🎨</p>
+                  <span class="msg-time">9:16 AM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chat-bottom">
+            <div class="chat-icons">
+              <button>📎</button>
+              <button>😊</button>
+              <button>📷</button>
+            </div>
+            <input class="chat-input" placeholder="Type a message…" readonly>
+            <button class="chat-send">➤</button>
+          </div>
+        </div>
+        <div class="float-badge fb1"><span class="fb-icon">📌</span><strong>3 pinned</strong> messages</div>
+        <div class="float-badge fb2"><span class="fb-icon">⏰</span>Message <strong>scheduled</strong></div>
+        <div class="float-badge fb3"><span class="fb-icon">🗂️</span><strong>48</strong> shared files</div>
+      </div>
+    </div>
+
+    <!-- Slide 2 — Calling -->
+    <div class="hero-slide">
+      <div class="hero-content">
+        <div class="hero-badge badge-pink"><span class="dot" style="background:var(--magenta)"></span> Audio & Video Calling</div>
+        <h1 class="hero-h1">Crystal-Clear <br><span class="grad-text-warm">Audio & Video</span> Calls</h1>
+        <p class="hero-p">Hop on a quick voice chat or launch a full HD video conference with screen sharing, reactions, and breakout rooms — all inside Akshar Plus.</p>
+        <div class="hero-btns">
+          <a href="#calling" class="btn-cta">Try Calling Now →</a>
+          <a href="#" class="btn-ghost">Watch Demo</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="chat-mockup" style="background:#1a1030;border:none;">
+          <div style="background:var(--grad-brand);padding:14px 18px;display:flex;align-items:center;gap:10px;">
+            <div class="chat-av">📹</div>
+            <div class="chat-top-info"><p style="color:#fff">Team Standup</p><span style="color:rgba(255,255,255,.7)">● 4 participants</span></div>
+            <div class="chat-top-actions" style="margin-left:auto;">
+              <button>📺</button><button>🔗</button>
+            </div>
+          </div>
+          <div class="vcall-grid">
+            <div class="vcall-tile vcall-speaking">
+              <div class="vcall-av">SR</div>
+              <span class="vcall-name">Sonia R.</span>
+            </div>
+            <div class="vcall-tile">
+              <div class="vcall-av">AM</div>
+              <span class="vcall-name">Arjun M.</span>
+            </div>
+            <div class="vcall-tile">
+              <div class="vcall-av">PK</div>
+              <span class="vcall-name">Priya K.</span>
+            </div>
+            <div class="vcall-tile">
+              <div class="vcall-av" style="font-size:.85rem">You</div>
+              <span class="vcall-name">You</span>
+            </div>
+          </div>
+          <div class="vcall-controls">
+            <button class="vctrl vctrl-mute">🎙️</button>
+            <button class="vctrl vctrl-cam">📷</button>
+            <button class="vctrl vctrl-screen">🖥️</button>
+            <button class="vctrl vctrl-end">📵</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 — Multi-Company -->
+    <div class="hero-slide">
+      <div class="hero-content">
+        <div class="hero-badge badge-teal"><span class="dot" style="background:var(--teal)"></span> Multi-Company Workspace</div>
+        <h1 class="hero-h1">One Login,<br><span class="grad-text">Many Workspaces</span></h1>
+        <p class="hero-p">Manage multiple companies, brands, or client accounts from a single unified account. Switch instantly with role-based access and isolated data per workspace.</p>
+        <div class="hero-btns">
+          <a href="#multicompany" class="btn-cta">Explore Workspaces →</a>
+          <a href="#" class="btn-ghost">See Plans</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="chat-mockup">
+          <div style="padding:12px 16px;background:var(--text-h);display:flex;align-items:center;justify-content:space-between;">
+            <span style="color:rgba(255,255,255,.6);font-size:.78rem;font-family:var(--font-h);letter-spacing:.08em;text-transform:uppercase;">Workspaces</span>
+            <span style="color:rgba(255,255,255,.4);font-size:.75rem;">3 active</span>
+          </div>
+          <div style="padding:16px;">
+            <div style="display:flex;flex-direction:column;gap:12px;">
+              <div style="display:flex;align-items:center;gap:12px;padding:12px;background:rgba(124,58,237,.08);border:1.5px solid rgba(124,58,237,.25);border-radius:14px;">
+                <div style="width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#e91e8c,#7c3aed);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.85rem;">AP</div>
+                <div style="flex:1"><p style="font-size:.85rem;font-weight:700;color:var(--text-h)">Akshar Plus HQ</p><span style="font-size:.73rem;color:var(--muted)">24 members · Admin</span></div>
+                <span style="font-size:.7rem;background:rgba(124,58,237,.15);color:var(--violet);padding:3px 9px;border-radius:20px;font-weight:600;">Active</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;padding:12px;background:var(--bg3);border:1px solid var(--border);border-radius:14px;">
+                <div style="width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#2563eb,#06b6d4);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.85rem;">NB</div>
+                <div style="flex:1"><p style="font-size:.85rem;font-weight:600;color:var(--text-h)">NovaByte Corp</p><span style="font-size:.73rem;color:var(--muted)">8 members · Manager</span></div>
+                <span style="font-size:.7rem;background:rgba(37,99,235,.1);color:var(--blue);padding:3px 9px;border-radius:20px;font-weight:600;">Switch</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;padding:12px;background:var(--bg3);border:1px solid var(--border);border-radius:14px;">
+                <div style="width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#f97316,#fbbf24);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:.85rem;">PX</div>
+                <div style="flex:1"><p style="font-size:.85rem;font-weight:600;color:var(--text-h)">Pixelcraft Studio</p><span style="font-size:.73rem;color:var(--muted)">5 members · Member</span></div>
+                <span style="font-size:.7rem;background:rgba(249,115,22,.1);color:var(--orange);padding:3px 9px;border-radius:20px;font-weight:600;">Switch</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Dots + Arrows -->
+  <div class="hero-dots" id="heroDots">
+    <button class="hero-dot active"></button>
+    <button class="hero-dot"></button>
+    <button class="hero-dot"></button>
+  </div>
+  <div class="hero-arrow-row">
+    <button class="hero-arrow" id="heroPrev">←</button>
+    <button class="hero-arrow" id="heroNext">→</button>
+  </div>
+</section>
+
+<!-- ══════════════════ FEATURES ══════════════════ -->
+<section class="features-section" id="features">
+  <div class="features-intro reveal">
+    <div class="section-label"><span class="dot"></span> Everything Included</div>
+    <h2 class="section-title">One Platform for All Your<br><span class="grad-text">Team Communication</span></h2>
+    <p class="section-sub" style="margin:0 auto;">Live chat, rich calling, multi-company management, smart message tools, and a complete media library — all under one roof.</p>
+  </div>
+  <div class="features-grid">
+    <div class="feature-card fc-pink reveal reveal-delay-1">
+      <div class="fc-icon fc-p">💬</div>
+      <h3>Live Chat</h3>
+      <p>Instant, threaded messaging with emoji reactions, mentions, and read receipts for every channel and direct message.</p>
+    </div>
+    <div class="feature-card fc-blue reveal reveal-delay-2">
+      <div class="fc-icon fc-b">🎙️</div>
+      <h3>Audio Calling</h3>
+      <p>Crystal-clear voice calls for 1-on-1 or group conversations with noise cancellation and spatial audio support.</p>
+    </div>
+    <div class="feature-card fc-teal reveal reveal-delay-3">
+      <div class="fc-icon fc-t">📹</div>
+      <h3>Video Calling</h3>
+      <p>HD video conferencing with screen sharing, virtual backgrounds, recording, and participant reactions.</p>
+    </div>
+    <div class="feature-card fc-purple reveal reveal-delay-1">
+      <div class="fc-icon fc-v">🏢</div>
+      <h3>Multi-Company</h3>
+      <p>Manage multiple organisations from a single login — each with isolated data, roles, and custom branding.</p>
+    </div>
+    <div class="feature-card fc-orange reveal reveal-delay-2">
+      <div class="fc-icon fc-o">📌</div>
+      <h3>Pin & Schedule Messages</h3>
+      <p>Pin important updates to the top of any channel. Schedule messages to be sent at the perfect time automatically.</p>
+    </div>
+    <div class="feature-card fc-grad reveal reveal-delay-3">
+      <div class="fc-icon fc-g">🗂️</div>
+      <h3>Shared Media Library</h3>
+      <p>All uploaded files auto-organised by type — images, videos, audio, links, and documents — searchable instantly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CALLING ══════════════════ -->
+<section class="calling-section" id="calling">
+  <div class="calling-grid">
+    <div class="calling-visual reveal">
+      <div class="vcall-mockup">
+        <div style="background:var(--grad-brand);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div class="chat-av">📹</div>
+            <div><p style="color:#fff;font-weight:600;">All-Hands Meeting</p><span style="color:rgba(255,255,255,.7);font-size:.75rem;">● 6 participants · 24:10</span></div>
+          </div>
+          <div style="display:flex;gap:8px;">
+            <button class="vctrl vctrl-screen" style="width:36px;height:36px;">🖥️</button>
+            <button class="vctrl" style="width:36px;height:36px;background:rgba(255,255,255,.2);color:#fff;">💬</button>
+          </div>
+        </div>
+        <div class="vcall-grid">
+          <div class="vcall-tile vcall-speaking">
+            <div class="vcall-av">SR</div><span class="vcall-name">Sonia R. 🎤</span>
+          </div>
+          <div class="vcall-tile">
+            <div class="vcall-av">AM</div><span class="vcall-name">Arjun M.</span>
+          </div>
+          <div class="vcall-tile">
+            <div class="vcall-av">PK</div><span class="vcall-name">Priya K.</span>
+          </div>
+          <div class="vcall-tile">
+            <div class="vcall-av">You</div><span class="vcall-name">You</span>
+          </div>
+        </div>
+        <div class="vcall-controls">
+          <button class="vctrl vctrl-mute">🎙️</button>
+          <button class="vctrl vctrl-cam">📷</button>
+          <button class="vctrl vctrl-screen">🖥️</button>
+          <button class="vctrl" style="background:rgba(255,255,255,.12);color:#fff;">✋</button>
+          <button class="vctrl vctrl-end">📵</button>
+        </div>
+      </div>
+      <div class="call-badge">
+        <div class="call-badge-av">PK</div>
+        <div><p>Priya K. joined</p><span>Akshar Plus · Just now</span></div>
+        <div class="live-dot"></div>
+      </div>
+    </div>
+
+    <div class="reveal reveal-delay-2">
+      <div class="section-label"><span class="dot" style="background:var(--magenta)"></span> Audio & Video</div>
+      <h2 class="section-title">Professional Calling<br><span class="grad-text-warm">Built Right In</span></h2>
+      <p style="color:var(--muted);line-height:1.75;font-size:1rem;margin-bottom:36px;">No external apps needed. Launch HD video calls, group audio conferences, or quick voice notes directly from any chat window — in one tap.</p>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:16px;">
+        <li style="display:flex;align-items:center;gap:14px;font-size:.95rem;">
+          <span style="width:38px;height:38px;border-radius:10px;background:rgba(233,30,140,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;">🎥</span>
+          HD video with virtual backgrounds & blur
+        </li>
+        <li style="display:flex;align-items:center;gap:14px;font-size:.95rem;">
+          <span style="width:38px;height:38px;border-radius:10px;background:rgba(37,99,235,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;">🖥️</span>
+          Screen sharing with annotation tools
+        </li>
+        <li style="display:flex;align-items:center;gap:14px;font-size:.95rem;">
+          <span style="width:38px;height:38px;border-radius:10px;background:rgba(6,182,212,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;">⏺️</span>
+          Auto-recording with searchable transcripts
+        </li>
+        <li style="display:flex;align-items:center;gap:14px;font-size:.95rem;">
+          <span style="width:38px;height:38px;border-radius:10px;background:rgba(124,58,237,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;">🔇</span>
+          AI noise cancellation & echo removal
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ MULTI-COMPANY ══════════════════ -->
+<section class="multicomp-section" id="multicompany">
+  <div class="multicomp-grid">
+    <div class="reveal">
+      <div class="section-label"><span class="dot" style="background:var(--teal)"></span> Multi-Company</div>
+      <h2 class="section-title">Switch Between<br><span class="grad-text">Workspaces Instantly</span></h2>
+      <p style="color:var(--muted);line-height:1.75;font-size:1rem;margin-bottom:32px;">One account. Multiple companies. Whether you're an agency, consultant, or enterprise — Akshar Plus keeps every client's data separate and secure while keeping your workflow unified.</p>
+      <ul style="list-style:none;display:flex;flex-direction:column;gap:14px;">
+        <li style="display:flex;align-items:center;gap:12px;font-size:.93rem;">
+          <span style="width:36px;height:36px;border-radius:10px;background:rgba(124,58,237,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.95rem;">🔐</span>
+          Isolated data and permissions per workspace
+        </li>
+        <li style="display:flex;align-items:center;gap:12px;font-size:.93rem;">
+          <span style="width:36px;height:36px;border-radius:10px;background:rgba(6,182,212,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.95rem;">⚡</span>
+          Instant switching — zero re-login required
+        </li>
+        <li style="display:flex;align-items:center;gap:12px;font-size:.93rem;">
+          <span style="width:36px;height:36px;border-radius:10px;background:rgba(249,115,22,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.95rem;">🎨</span>
+          Custom branding per company workspace
+        </li>
+        <li style="display:flex;align-items:center;gap:12px;font-size:.93rem;">
+          <span style="width:36px;height:36px;border-radius:10px;background:rgba(37,99,235,.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:.95rem;">👥</span>
+          Role-based access control per organisation
+        </li>
+      </ul>
+    </div>
+
+    <div class="reveal reveal-delay-2">
+      <div class="workspace-mockup">
+        <div class="ws-sidebar">
+          <div class="ws-company-strip">
+            <div class="ws-co-av active" style="background:linear-gradient(135deg,#e91e8c,#7c3aed);">AP</div>
+            <div class="ws-co-av" style="background:linear-gradient(135deg,#2563eb,#06b6d4);">NB</div>
+            <div class="ws-co-av" style="background:linear-gradient(135deg,#f97316,#fbbf24);">PX</div>
+            <div style="width:34px;height:34px;border-radius:10px;border:2px dashed rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:1.2rem;cursor:pointer;">+</div>
+          </div>
+          <div class="ws-channels">
+            <h4>Akshar Plus</h4>
+            <div class="ws-ch active"><span>#</span> general</div>
+            <div class="ws-ch"><span>#</span> design</div>
+            <div class="ws-ch"><span>#</span> engineering</div>
+            <div class="ws-ch"><span>🔒</span> management</div>
+          </div>
+          <div class="ws-content">
+            <div class="ws-msg-list">
+              <div class="ws-msg">
+                <div class="ws-msg-av" style="background:linear-gradient(135deg,#e91e8c,#7c3aed);">SR</div>
+                <div class="ws-msg-body"><p>Sonia R.</p><span>Sprint demo is live! 🚀</span></div>
+              </div>
+              <div class="ws-msg">
+                <div class="ws-msg-av" style="background:linear-gradient(135deg,#2563eb,#06b6d4);">AM</div>
+                <div class="ws-msg-body"><p>Arjun M.</p><span>Great work everyone 🎉</span></div>
+              </div>
+              <div class="ws-msg">
+                <div class="ws-msg-av" style="background:linear-gradient(135deg,#f97316,#fbbf24);">PK</div>
+                <div class="ws-msg-body"><p>Priya K.</p><span>Docs updated, link shared 📄</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ PIN + SCHEDULE ══════════════════ -->
+<section class="pinschedule-section" id="pinschedule">
+  <div style="text-align:center;margin-bottom:72px;" class="reveal">
+    <div class="section-label"><span class="dot"></span> Smart Messaging</div>
+    <h2 class="section-title">Pin Important Updates &<br><span class="grad-text">Schedule Any Message</span></h2>
+    <p class="section-sub" style="margin:0 auto;">Keep your team focused on what matters. Pin critical announcements and schedule messages to go out at exactly the right time — even while you're offline.</p>
+  </div>
+  <div class="ps-grid">
+    <!-- Pinned Messages -->
+    <div class="ps-card reveal reveal-delay-1">
+      <div class="ps-card-head">
+        <div class="ps-head-icon pin-bg">📌</div>
+        <h3>Pinned Messages</h3>
+        <span style="margin-left:auto;background:rgba(251,191,36,.15);color:#b45309;font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:20px;">3 pinned</span>
+      </div>
+      <div class="ps-card-body">
+        <div class="pin-item">
+          <div class="pin-dot" style="background:var(--violet);"></div>
+          <div class="pin-text">
+            <p>Q4 OKR Document — Now Live</p>
+            <span>Pinned by Sonia R. · #general · 2 hrs ago</span>
+          </div>
+          <button class="pin-unpin">Unpin</button>
+        </div>
+        <div class="pin-item">
+          <div class="pin-dot" style="background:var(--teal);"></div>
+          <div class="pin-text">
+            <p>New API credentials shared</p>
+            <span>Pinned by Arjun M. · #engineering · 1 day ago</span>
+          </div>
+          <button class="pin-unpin">Unpin</button>
+        </div>
+        <div class="pin-item">
+          <div class="pin-dot" style="background:var(--amber);"></div>
+          <div class="pin-text">
+            <p>All-hands call: Friday 5 PM</p>
+            <span>Pinned by Admin · #announcements · 3 days ago</span>
+          </div>
+          <button class="pin-unpin">Unpin</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scheduled Messages -->
+    <div class="ps-card reveal reveal-delay-2">
+      <div class="ps-card-head">
+        <div class="ps-head-icon sched-bg">⏰</div>
+        <h3>Scheduled Messages</h3>
+        <span style="margin-left:auto;background:rgba(37,99,235,.1);color:var(--blue);font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:20px;">4 queued</span>
+      </div>
+      <div class="ps-card-body">
+        <div class="sched-item">
+          <div class="sched-time">Tomorrow 9 AM</div>
+          <div class="sched-text">"Good morning team! 🌟 Sprint 12 begins today…"</div>
+          <button class="sched-cancel">Cancel</button>
+        </div>
+        <div class="sched-item">
+          <div class="sched-time">Fri 5 PM</div>
+          <div class="sched-text">"Weekly wrap-up summary is ready for review…"</div>
+          <button class="sched-cancel">Cancel</button>
+        </div>
+        <div class="sched-item">
+          <div class="sched-time">Mon 10 AM</div>
+          <div class="sched-text">"Reminder: performance reviews due by EOD…"</div>
+          <button class="sched-cancel">Cancel</button>
+        </div>
+        <div class="sched-item">
+          <div class="sched-time">Mon 3 PM</div>
+          <div class="sched-text">"Client presentation assets uploaded to Design…"</div>
+          <button class="sched-cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FILES MEDIA SECTION ══════════════════ -->
+<section class="files-section" id="files">
+  <div class="files-intro reveal">
+    <div class="section-label"><span class="dot" style="background:var(--teal)"></span> Shared Media</div>
+    <h2 class="section-title">All Your Files,<br><span class="grad-text">Auto-Organised</span></h2>
+    <p class="section-sub" style="margin:0 auto;">Every file shared in a channel is automatically sorted by type. Find any image, video, audio clip, link, or document instantly — no searching through old messages.</p>
+  </div>
+
+  <div class="files-tabs reveal">
+    <button class="file-tab active" data-tab="images">🖼️ Images</button>
+    <button class="file-tab" data-tab="videos">🎬 Videos</button>
+    <button class="file-tab" data-tab="audio">🎵 Audio</button>
+    <button class="file-tab" data-tab="links">🔗 Links</button>
+    <button class="file-tab" data-tab="docs">📄 Documents</button>
+  </div>
+
+  <!-- Images -->
+  <div class="files-panel active" id="tab-images">
+    <div class="files-grid-4">
+      <div class="img-thumb" style="background:linear-gradient(135deg,#fce4ec,#f8bbd9);font-size:2.5rem;">🎨</div>
+      <div class="img-thumb" style="background:linear-gradient(135deg,#e8eaf6,#c5cae9);font-size:2.5rem;">📊</div>
+      <div class="img-thumb" style="background:linear-gradient(135deg,#e0f7fa,#b2ebf2);font-size:2.5rem;">🏔️</div>
+      <div class="img-thumb" style="background:linear-gradient(135deg,#fff8e1,#ffecb3);font-size:2.5rem;">✨</div>
+      <div class="img-thumb" style="background:linear-gradient(135deg,#f3e5f5,#e1bee7);font-size:2.5rem;">🖼️</div>
+      <div class="img-thumb" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);font-size:2.5rem;">🌿</div>
+      <div class="img-thumb" style="background:linear-gradient(135deg,#fbe9e7,#ffccbc);font-size:2.5rem;">🌅</div>
+      <div class="img-thumb" style="background:linear-gradient(135deg,#e1f5fe,#b3e5fc);font-size:2.5rem;">🎭</div>
+    </div>
+  </div>
+
+  <!-- Videos -->
+  <div class="files-panel" id="tab-videos">
+    <div class="files-grid-2">
+      <div class="vid-thumb vid-thumb-img" style="background:linear-gradient(135deg,#1a1030,#2d1b69);">
+        <div class="vid-play"><div class="vid-play-btn">▶</div><p>Sprint Review Recording</p></div>
+        <div class="vid-dur">24:10</div>
+      </div>
+      <div class="vid-thumb vid-thumb-img" style="background:linear-gradient(135deg,#0d1b2a,#1a3a5c);">
+        <div class="vid-play"><div class="vid-play-btn">▶</div><p>Product Demo v2.1</p></div>
+        <div class="vid-dur">08:43</div>
+      </div>
+      <div class="vid-thumb vid-thumb-img" style="background:linear-gradient(135deg,#1a0820,#3d1460);">
+        <div class="vid-play"><div class="vid-play-btn">▶</div><p>Client Onboarding Walk-through</p></div>
+        <div class="vid-dur">15:22</div>
+      </div>
+      <div class="vid-thumb vid-thumb-img" style="background:linear-gradient(135deg,#0d2818,#1a5c3a);">
+        <div class="vid-play"><div class="vid-play-btn">▶</div><p>Team Building Event Highlights</p></div>
+        <div class="vid-dur">03:57</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio -->
+  <div class="files-panel" id="tab-audio">
+    <div class="files-list">
+      <div class="audio-item">
+        <div class="audio-icon">🎵</div>
+        <div class="audio-info">
+          <p>Weekly Standup — Voice Note</p>
+          <span>Sonia R. · #design · Yesterday</span>
+          <div class="audio-waveform">
+            <span style="height:6px;animation-delay:0s"></span>
+            <span style="height:14px;animation-delay:.1s"></span>
+            <span style="height:10px;animation-delay:.2s"></span>
+            <span style="height:18px;animation-delay:.3s"></span>
+            <span style="height:8px;animation-delay:.4s"></span>
+            <span style="height:16px;animation-delay:.5s"></span>
+            <span style="height:12px;animation-delay:.6s"></span>
+            <span style="height:6px;animation-delay:.7s"></span>
+            <span style="height:14px;animation-delay:.8s"></span>
+            <span style="height:10px;animation-delay:.9s"></span>
+          </div>
+        </div>
+        <div class="audio-dur">2:34</div>
+      </div>
+      <div class="audio-item">
+        <div class="audio-icon" style="background:linear-gradient(135deg,var(--blue),var(--sky));">🎤</div>
+        <div class="audio-info">
+          <p>Q4 Kickoff Announcement</p>
+          <span>Admin · #general · 3 days ago</span>
+          <div class="audio-waveform">
+            <span style="height:10px;animation-delay:0s"></span>
+            <span style="height:6px;animation-delay:.15s"></span>
+            <span style="height:16px;animation-delay:.3s"></span>
+            <span style="height:8px;animation-delay:.45s"></span>
+            <span style="height:18px;animation-delay:.6s"></span>
+            <span style="height:12px;animation-delay:.75s"></span>
+            <span style="height:6px;animation-delay:.9s"></span>
+            <span style="height:14px;animation-delay:1.05s"></span>
+          </div>
+        </div>
+        <div class="audio-dur">1:12</div>
+      </div>
+      <div class="audio-item">
+        <div class="audio-icon" style="background:linear-gradient(135deg,var(--teal),var(--cyan));">🎙️</div>
+        <div class="audio-info">
+          <p>Client Feedback Recording</p>
+          <span>Priya K. · #client-acme · 1 week ago</span>
+          <div class="audio-waveform">
+            <span style="height:14px;animation-delay:0s"></span>
+            <span style="height:18px;animation-delay:.12s"></span>
+            <span style="height:8px;animation-delay:.24s"></span>
+            <span style="height:12px;animation-delay:.36s"></span>
+            <span style="height:16px;animation-delay:.48s"></span>
+            <span style="height:6px;animation-delay:.6s"></span>
+            <span style="height:14px;animation-delay:.72s"></span>
+            <span style="height:10px;animation-delay:.84s"></span>
+          </div>
+        </div>
+        <div class="audio-dur">4:08</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Links -->
+  <div class="files-panel" id="tab-links">
+    <div class="files-list">
+      <a class="link-item" href="#">
+        <div class="link-favicon">🌐</div>
+        <div class="link-info"><p>Akshar Plus Documentation</p><span>docs.aksharplus.io · Shared by Arjun M. · Today</span></div>
+        <span class="link-arrow">↗</span>
+      </a>
+      <a class="link-item" href="#">
+        <div class="link-favicon">📊</div>
+        <div class="link-info"><p>Q4 Analytics Report — Google Sheets</p><span>docs.google.com · Shared by Sonia R. · Yesterday</span></div>
+        <span class="link-arrow">↗</span>
+      </a>
+      <a class="link-item" href="#">
+        <div class="link-favicon">🎨</div>
+        <div class="link-info"><p>Brand Kit 2025 — Figma File</p><span>figma.com · Shared by Priya K. · 3 days ago</span></div>
+        <span class="link-arrow">↗</span>
+      </a>
+      <a class="link-item" href="#">
+        <div class="link-favicon">📹</div>
+        <div class="link-info"><p>Product Walkthrough — Loom Video</p><span>loom.com · Shared by Vikram B. · 1 week ago</span></div>
+        <span class="link-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Documents -->
+  <div class="files-panel" id="tab-docs">
+    <div class="files-list">
+      <div class="doc-item">
+        <div class="doc-icon" style="background:rgba(37,99,235,.1);">📝</div>
+        <div class="doc-info"><p>Sprint 12 Planning Document.docx</p><span>Arjun M. · #engineering · Today · </span></div>
+        <div class="doc-size">248 KB</div>
+      </div>
+      <div class="doc-item">
+        <div class="doc-icon" style="background:rgba(34,197,94,.1);">📊</div>
+        <div class="doc-info"><p>Q4 Budget Forecast.xlsx</p><span>Admin · #finance · Yesterday</span></div>
+        <div class="doc-size">1.2 MB</div>
+      </div>
+      <div class="doc-item">
+        <div class="doc-icon" style="background:rgba(239,68,68,.1);">📄</div>
+        <div class="doc-info"><p>Client Proposal — ACME Corp.pdf</p><span>Priya K. · #sales · 2 days ago</span></div>
+        <div class="doc-size">3.8 MB</div>
+      </div>
+      <div class="doc-item">
+        <div class="doc-icon" style="background:rgba(249,115,22,.1);">📋</div>
+        <div class="doc-info"><p>Akshar Plus Brand Guidelines.pdf</p><span>Design Team · #general · 1 week ago</span></div>
+        <div class="doc-size">5.1 MB</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ TESTIMONIALS ══════════════════ -->
+<section class="testimonials" id="testimonials">
+  <div style="text-align:center;margin-bottom:72px;" class="reveal">
+    <div class="section-label"><span class="dot"></span> Customer Love</div>
+    <h2 class="section-title">Teams Who Swear By<br><span class="grad-text">Akshar Plus</span></h2>
+    <p class="section-sub" style="margin:0 auto;">Join 50,000+ users across 2,000+ companies who've made Akshar Plus their primary communication platform.</p>
+  </div>
+
+  <div class="testi-track-wrap">
+    <div class="testi-track" id="testiTrack">
+      <div class="testi-card">
+        <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-quote">The multi-company workspace is a game-changer. We manage 6 client accounts from one login and the isolation between workspaces is flawless.</p>
+        <div class="testi-author">
+          <div class="testi-av" style="background:linear-gradient(135deg,#e91e8c,#7c3aed)">SR</div>
+          <div><div class="testi-name">Sonia Rao</div><div class="testi-role">Creative Director · Pixelcraft</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-quote">We replaced 4 tools — Slack, Zoom, Loom, and Dropbox — with just Akshar Plus. The media library alone saved us hours of file hunting every week.</p>
+        <div class="testi-author">
+          <div class="testi-av" style="background:linear-gradient(135deg,#2563eb,#06b6d4)">AM</div>
+          <div><div class="testi-name">Arjun Mehta</div><div class="testi-role">CTO · NovaByte Technologies</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-quote">Pinned messages and scheduled broadcasts have transformed how we run company-wide communications. Our team actually reads announcements now!</p>
+        <div class="testi-author">
+          <div class="testi-av" style="background:linear-gradient(135deg,#f97316,#fbbf24)">PK</div>
+          <div><div class="testi-name">Priya Kapoor</div><div class="testi-role">Head of Ops · LaunchPad HQ</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-quote">Video call quality is outstanding and the noise cancellation is exceptional. Our remote team feels more connected than ever — even across 3 time zones.</p>
+        <div class="testi-author">
+          <div class="testi-av" style="background:linear-gradient(135deg,#7c3aed,#06b6d4)">VB</div>
+          <div><div class="testi-name">Vikram Bose</div><div class="testi-role">Engineering Lead · CloudScale</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-quote">Scheduled messages have made our global async communication effortless. I draft messages in the evening and they send at the right local time for each team.</p>
+        <div class="testi-author">
+          <div class="testi-av" style="background:linear-gradient(135deg,#e91e8c,#f97316)">NJ</div>
+          <div><div class="testi-name">Neha Joshi</div><div class="testi-role">Product Manager · MarketPulse</div></div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+        <p class="testi-quote">The audio file organisation is incredible. Every voice note and recording is right there in the media library — searchable, categorised, and ready to replay instantly.</p>
+        <div class="testi-author">
+          <div class="testi-av" style="background:linear-gradient(135deg,#06b6d4,#2563eb)">RS</div>
+          <div><div class="testi-name">Rohan Sharma</div><div class="testi-role">Podcast Producer · WaveCast</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testi-footer">
+    <div class="testi-dots" id="testiDots"></div>
+    <div style="text-align:center;font-size:.85rem;color:rgba(255,255,255,.35);">50,000+ happy users across 120+ countries</div>
+    <div class="testi-arrows">
+      <button class="t-arrow" id="testiPrev">←</button>
+      <button class="t-arrow" id="testiNext">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div>
+      <a class="nav-logo" href="#" style="margin-bottom:16px;display:inline-flex;">
+        <div class="logo-icon">
+          <img src="light-full-logo.png">
+        </div>
+        
+      </a>
+      <p class="footer-desc">The all-in-one communication platform for teams — live chat, voice & video calling, multi-company workspaces, and smart file management.</p>
+      <div class="social-row">
+        <a class="soc-btn" href="#" title="Twitter">𝕏</a>
+        <a class="soc-btn" href="#" title="LinkedIn">in</a>
+        <a class="soc-btn" href="#" title="Instagram">ig</a>
+        <a class="soc-btn" href="#" title="YouTube">▶</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="#">Live Chat</a></li>
+        <li><a href="#">Audio Calling</a></li>
+        <li><a href="#">Video Calling</a></li>
+        <li><a href="#">Multi-Company</a></li>
+        <li><a href="#">Media Library</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Press Kit</a></li>
+        <li><a href="#">Status</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Stay in the loop</h4>
+      <p style="color:var(--muted);font-size:.88rem;line-height:1.6;margin-bottom:0;">Get product updates and tips delivered to your inbox.</p>
+      <div class="nl-form">
+        <input type="email" placeholder="your@email.com">
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Akshar Plus. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════════════════ JS ══════════════════ -->
+<script src="script.js">
+
+</script>
+</body>
+</html>
